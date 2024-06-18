@@ -1,8 +1,4 @@
 
-Your description is mostly clear but could benefit from some additional formatting and clarification to improve readability and ensure all necessary details are included. Here’s an improved version:
-
-markdown
-Copy code
 # ChatBot using Gemini API from Google
 
 This is a ChatBot made using the Gemini API from Google.
