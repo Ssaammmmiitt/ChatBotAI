@@ -225,14 +225,18 @@ const App = () => {
         method: 'POST',
         body: JSON.stringify({
           history: chatHistory,
-          message: value
+          message: value.toString()
         }),
         headers: {
           "Content-Type": "application/json",
         }
       };
       const response = await fetch("http://localhost:8000/gemini", options);
-      const data = await response.text();
+      console.log(response);
+      let data = await (response.text());
+      data=JSON.parse(data);
+      data=data.candidates[0].content.parts[0].text;
+      console.log(data);
 
       setChatHistory((oldChatHistory) => [
         ...oldChatHistory,

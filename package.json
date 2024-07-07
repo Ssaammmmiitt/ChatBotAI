@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start:frontend": "vite --port 3000",
-    "start:backend": "node server.cjs",
+    "start:backend": "nodemon server.cjs",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
