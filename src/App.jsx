@@ -250,7 +250,7 @@ const App = () => {
   };
 
   return (
-    <div className="app">
+    <div className="app ">
       <p>
         What do you want to know?
         <button className="surprise" onClick={surprise}>
